@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Carton Box Factory</title>
+  <meta name="description" content="Shree Carton Box Factory - Corrugated box, packaging box, custom carton box manufacturer for business, industry and shipping needs." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    :root{
+      --bg:#f7f4ef;
+      --white:#ffffff;
+      --dark:#1f2937;
+      --text:#4b5563;
+      --primary:#a16207;
+      --primary-dark:#7c4a03;
+      --accent:#d97706;
+      --soft:#fff7ed;
+      --border:#eadfce;
+      --shadow:0 14px 35px rgba(0,0,0,0.08);
+      --radius:22px;
+      --max:1200px;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:"Poppins",sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(var(--max), 92%);
+      margin:auto;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 24px;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      font-weight:600;
+      transition:.25s ease;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,var(--accent),var(--primary));
+      color:#fff;
+      box-shadow:0 12px 25px rgba(217,119,6,.25);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-light{
+      background:#fff;
+      color:var(--primary-dark);
+      border:1px solid rgba(255,255,255,.7);
+    }
+
+    .btn-light:hover{
+      transform:translateY(-2px);
+    }
+
+    .section{
+      padding:80px 0;
+    }
+
+    .section-title{
+      font-family:"Montserrat",sans-serif;
+      font-size:clamp(28px,4vw,42px);
+      line-height:1.15;
+      margin-bottom:14px;
+      color:var(--dark);
+    }
+
+    .section-subtitle{
+      color:var(--text);
+      font-size:16px;
+      max-width:720px;
+      line-height:1.8;
+    }
+
+    /* NAV */
+    .navbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid #eee7dd;
+    }
+
+    .nav-wrap{
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo-mark{
+      width:48px;
+      height:48px;
+      border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--primary-dark));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-family:"Montserrat",sans-serif;
+      box-shadow:0 10px 20px rgba(161,98,7,.22);
+    }
+
+    .logo-text h1{
+      font-size:18px;
+      line-height:1.1;
+      font-family:"Montserrat",sans-serif;
+    }
+
+    .logo-text span{
+      font-size:12px;
+      color:var(--text);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      font-size:14px;
+      font-weight:600;
+      color:#374151;
+    }
+
+    .nav-links a:hover{
+      color:var(--primary);
+    }
+
+    /* HERO */
+    .hero{
+      background:
+        linear-gradient(rgba(31,41,55,.76), rgba(31,41,55,.76)),
+        radial-gradient(circle at top right, rgba(217,119,6,.25), transparent 30%),
+        linear-gradient(135deg,#2f3744,#1f2937);
+      color:#fff;
+      overflow:hidden;
+    }
+
+    .hero-wrap{
+      min-height:88vh;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      align-items:center;
+      gap:40px;
+      padding:60px 0;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:999px;
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:13px;
+      margin-bottom:20px;
+    }
+
+    .hero h2{
+      font-family:"Montserrat",sans-serif;
+      font-size:clamp(34px,5vw,58px);
+      line-height:1.08;
+      margin-bottom:18px;
+    }
+
+    .hero p{
+      color:#f5f5f5;
+      font-size:16px;
+      line-height:1.9;
+      max-width:680px;
+      margin-bottom:28px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:26px;
+    }
+
+    .hero-stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      max-width:660px;
+    }
+
+    .stat{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:20px;
+      padding:18px 16px;
+    }
+
+    .stat strong{
+      display:block;
+      font-family:"Montserrat",sans-serif;
+      font-size:24px;
+      margin-bottom:6px;
+    }
+
+    .stat span{
+      font-size:13px;
+      color:#ececec;
+    }
+
+    .hero-card{
+      background:#fff;
+      color:var(--dark);
+      border-radius:30px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-box{
+      border:2px dashed #e7c89d;
+      border-radius:24px;
+      padding:24px;
+      background:linear-gradient(180deg,#fffaf4,#fff);
+    }
+
+    .hero-box-top{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      align-items:start;
+      margin-bottom:22px;
+    }
+
+    .hero-box h3{
+      font-family:"Montserrat",sans-serif;
+      font-size:24px;
+      line-height:1.25;
+    }
+
+    .hero-box p{
+      color:var(--text);
+      margin:10px 0 0;
+      line-height:1.8;
+      font-size:14px;
+    }
+
+    .chip{
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--soft);
+      color:var(--primary-dark);
+      font-size:12px;
+      font-weight:700;
+      white-space:nowrap;
+    }
+
+    .box-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    .mini-box{
+      border-radius:20px;
+      background:#fff;
+      border:1px solid var(--border);
+      padding:18px;
+    }
+
+    .mini-box h4{
+      font-size:15px;
+      margin-bottom:8px;
+      color:var(--primary-dark);
+      font-family:"Montserrat",sans-serif;
+    }
+
+    .mini-box p{
+      font-size:13px;
+      line-height:1.7;
+      color:var(--text);
+      margin:0;
+    }
+
+    /* ABOUT */
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      margin-top:36px;
+      align-items:stretch;
+    }
+
+    .about-card,
+    .about-panel{
+      background:var(--white);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      border:1px solid #f0e7dc;
+      padding:28px;
+    }
+
+    .about-panel{
+      display:grid;
+      gap:16px;
+    }
+
+    .about-item{
+      padding:18px;
+      border-radius:18px;
+      background:var(--soft);
+      border:1px solid #f4e3cb;
+    }
+
+    .about-item strong{
+      display:block;
+      margin-bottom:6px;
+      color:var(--primary-dark);
+      font-family:"Montserrat",sans-serif;
+    }
+
+    .about-card p{
+      color:var(--text);
+      line-height:1.9;
+      margin-bottom:14px;
+    }
+
+    /* PRODUCTS */
+    .products-grid{
+      margin-top:34px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .product{
+      background:#fff;
+      border-radius:24px;
+      padding:20px;
+      border:1px solid #efe5d8;
+      box-shadow:var(--shadow);
+      transition:.25s ease;
+    }
+
+    .product:hover{
+      transform:translateY(-6px);
+    }
+
+    .product-icon{
+      width:64px;
+      height:64px;
+      border-radius:18px;
+      background:linear-gradient(135deg,#fbbf24,#d97706);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-family:"Montserrat",sans-serif;
+      margin-bottom:16px;
+      box-shadow:0 12px 22px rgba(217,119,6,.22);
+    }
+
+    .product h3{
+      font-family:"Montserrat",sans-serif;
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .product p{
+      color:var(--text);
+      line-height:1.8;
+      font-size:14px;
+      margin-bottom:14px;
+    }
+
+    .product ul{
+      padding-left:18px;
+      color:#6b7280;
+      line-height:1.9;
+      font-size:14px;
+    }
+
+    /* WHY */
+    .why-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:34px;
+    }
+
+    .why-card{
+      background:#fff;
+      padding:22px 18px;
+      border-radius:22px;
+      text-align:center;
+      border:1px solid #efe5d8;
+      box-shadow:var(--shadow);
+    }
+
+    .why-card strong{
+      display:block;
+      margin:14px 0 8px;
+      font-family:"Montserrat",sans-serif;
+      color:var(--primary-dark);
+      font-size:16px;
+    }
+
+    .why-icon{
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--soft);
+      color:var(--primary-dark);
+      font-weight:800;
+    }
+
+    .why-card p{
+      color:var(--text);
+      font-size:14px;
+      line-height:1.8;
+    }
+
+    /* INDUSTRIES */
+    .industries{
+      background:linear-gradient(180deg,#fff8f1,#fff);
+    }
+
+    .industries-grid{
+      margin-top:34px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .industry{
+      background:#fff;
+      border:1px solid #efe5d8;
+      border-radius:22px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+
+    .industry h3{
+      font-family:"Montserrat",sans-serif;
+      font-size:18px;
+      margin-bottom:10px;
+      color:var(--primary-dark);
+    }
+
+    .industry p{
+      font-size:14px;
+      line-height:1.8;
+      color:var(--text);
+    }
+
+    /* QUOTE */
+    .quote-wrap{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:24px;
+      align-items:start;
+      margin-top:34px;
+    }
+
+    .quote-card,
+    .form-card{
+      background:#fff;
+      border-radius:26px;
+      border:1px solid #efe5d8;
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+
+    .quote-card h3,
+    .form-card h3{
+      font-family:"Montserrat",sans-serif;
+      font-size:26px;
+      margin-bottom:14px;
+    }
+
+    .quote-card p{
+      color:var(--text);
+      line-height:1.9;
+      margin-bottom:18px;
+    }
+
+    .quote-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .quote-list div{
+      padding:14px 16px;
+      border-radius:16px;
+      background:var(--soft);
+      color:#6b4a1d;
+      border:1px solid #f1dfc4;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .form-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    .field{
+      margin-bottom:14px;
+    }
+
+    .field.full{
+      grid-column:1 / -1;
+    }
+
+    .field label{
+      display:block;
+      margin-bottom:8px;
+      font-size:14px;
+      font-weight:600;
+      color:#374151;
+    }
+
+    .field input,
+    .field select,
+    .field textarea{
+      width:100%;
+      border:1px solid #e7dccd;
+      background:#fffdfb;
+      border-radius:16px;
+      padding:14px 14px;
+      font-family:"Poppins",sans-serif;
+      font-size:14px;
+      outline:none;
+      transition:.2s ease;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus{
+      border-color:#d6a35d;
+      box-shadow:0 0 0 4px rgba(217,119,6,.10);
+    }
+
+    .field textarea{
+      min-height:130px;
+      resize:vertical;
+    }
+
+    /* FOOTER */
+    .footer{
+      background:#1f2937;
+      color:#f5f5f5;
+      padding:38px 0;
+      margin-top:40px;
+    }
+
+    .footer-wrap{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:16px;
+      align-items:center;
+    }
+
+    .footer h3{
+      font-family:"Montserrat",sans-serif;
+      margin-bottom:8px;
+      font-size:20px;
+    }
+
+    .footer p{
+      color:#d6d6d6;
+      line-height:1.8;
+      font-size:14px;
+    }
+
+    .footer-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .footer-btn{
+      padding:12px 18px;
+      border-radius:999px;
+      background:#374151;
+      color:#fff;
+      font-size:14px;
+      border:1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-btn:hover{
+      background:#4b5563;
+    }
+
+    /* WHATSAPP */
+    .float-btn{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:1200;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#22c55e,#16a34a);
+      color:#fff;
+      font-weight:800;
+      box-shadow:0 14px 24px rgba(34,197,94,.28);
+      font-family:"Montserrat",sans-serif;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 980px){
+      .hero-wrap,
+      .about-grid,
+      .quote-wrap{
+        grid-template-columns:1fr;
+      }
+
+      .products-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .why-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .industries-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .footer-wrap{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 720px){
+      .nav-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:12px 0;
+      }
+
+      .nav-links{
+        gap:14px;
+      }
+
+      .hero-stats,
+      .form-grid,
+      .products-grid,
+      .why-grid,
+      .industries-grid,
+      .box-grid{
+        grid-template-columns:1fr;
+      }
+
+      .section{
+        padding:64px 0;
+      }
+
+      .hero-wrap{
+        min-height:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <div class="logo">
+        <div class="logo-mark">CB</div>
+        <div class="logo-text">
+          <h1>Shree Carton Box Factory</h1>
+          <span>Corrugated & Custom Packaging Solutions</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-wrap">
+      <div>
+        <div class="hero-badge">✔ Custom Box Manufacturer • ✔ Bulk Supply • ✔ Fast Delivery</div>
+        <h2>Strong, Reliable & Custom Carton Box Solutions For Every Business</h2>
+        <p>
+          We manufacture premium quality corrugated carton boxes, packaging boxes and custom shipping boxes for retail, e-commerce, food, industrial and wholesale businesses. Strong material, clean finishing and dependable supply.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+          <a href="tel:+919999999999" class="btn btn-light">Call Now</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Years Industry Experience</span>
+          </div>
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Business Clients Served</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Quote & Order Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-box">
+          <div class="hero-box-top">
+            <div>
+              <h3>Packaging That Protects Your Product & Brand</h3>
+              <p>Custom size, strong board quality, printing options and bulk production support.</p>
+            </div>
+            <span class="chip">Factory Direct</span>
+          </div>
+
+          <div class="box-grid">
+            <div class="mini-box">
+              <h4>Corrugated Boxes</h4>
+              <p>For transport, storage and shipping with strong load capacity.</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>Printed Boxes</h4>
+              <p>Brand name, logo and product details printing available.</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>Custom Sizes</h4>
+              <p>Made as per your product size and packaging requirement.</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>Bulk Orders</h4>
+              <p>Wholesale supply for shops, factories and distributors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Our Carton Box Factory</h2>
+      <p class="section-subtitle">
+        We are a trusted carton box manufacturer focused on quality, durability and timely delivery. From simple packaging cartons to custom printed corrugated boxes, we help businesses pack smarter and safer.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <p>
+            Shree Carton Box Factory provides dependable carton packaging solutions for wholesalers, retailers, manufacturers, logistics businesses and e-commerce sellers. We understand that packaging is not just a box — it protects your product, improves handling and builds your brand image.
+          </p>
+          <p>
+            Our factory works with strong raw materials, proper finishing and size customization so you get packaging that fits your need perfectly. Whether you need regular supply or one-time bulk production, we are ready to support your business.
+          </p>
+          <a href="#contact" class="btn btn-primary">Request Business Quote</a>
+        </div>
+
+        <div class="about-panel">
+          <div class="about-item">
+            <strong>Custom Manufacturing</strong>
+            Size, thickness and style as per your business requirement.
+          </div>
+          <div class="about-item">
+            <strong>Bulk Supply Capacity</strong>
+            Suitable for local shops, distributors and industrial packaging.
+          </div>
+          <div class="about-item">
+            <strong>Durable Material</strong>
+            Corrugated sheet strength for safe transport and stacking.
+          </div>
+          <div class="about-item">
+            <strong>Competitive Pricing</strong>
+            Factory-direct rates with quality-focused production.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <h2 class="section-title">Our Carton Box Products</h2>
+      <p class="section-subtitle">
+        We manufacture multiple types of packaging boxes for different product categories and business needs.
+      </p>
+
+      <div class="products-grid">
+        <div class="product">
+          <div class="product-icon">01</div>
+          <h3>Corrugated Shipping Boxes</h3>
+          <p>Heavy-duty transport boxes for safe storage and product dispatch.</p>
+          <ul>
+            <li>Strong board quality</li>
+            <li>Bulk dispatch use</li>
+            <li>Custom dimensions available</li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product-icon">02</div>
+          <h3>Printed Packaging Boxes</h3>
+          <p>Custom printed boxes for product branding, retail display and wholesale packaging.</p>
+          <ul>
+            <li>Logo printing</li>
+            <li>Brand name and label support</li>
+            <li>Professional look</li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product-icon">03</div>
+          <h3>E-commerce Carton Boxes</h3>
+          <p>Boxes specially suited for online sellers, courier packing and safe product delivery.</p>
+          <ul>
+            <li>Courier-safe packing</li>
+            <li>Lightweight & durable</li>
+            <li>Product-fit sizing</li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product-icon">04</div>
+          <h3>Die-Cut Boxes</h3>
+          <p>Special shape packaging for branded products and better presentation.</p>
+          <ul>
+            <li>Custom fold patterns</li>
+            <li>Attractive display use</li>
+            <li>Retail product friendly</li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product-icon">05</div>
+          <h3>Food & Bakery Boxes</h3>
+          <p>Safe and attractive boxes for food items, snacks, sweets and bakery packing.</p>
+          <ul>
+            <li>Clean finishing</li>
+            <li>Useful for takeaway & packing</li>
+            <li>Custom branding possible</li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product-icon">06</div>
+          <h3>Industrial Packaging Boxes</h3>
+          <p>Reliable cartons for machinery parts, hardware items and industrial materials.</p>
+          <ul>
+            <li>Heavy-load support</li>
+            <li>Stacking friendly</li>
+            <li>Rough handling protection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why Businesses Choose Us</h2>
+      <p class="section-subtitle">
+        Strong quality, clean finishing and practical packaging support that suits real business demand.
+      </p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <strong>Strong Quality</strong>
+          <p>Boxes made for safe handling, storage and transport.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">⚙</div>
+          <strong>Custom Size</strong>
+          <p>Manufacturing based on your exact product requirement.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">⏱</div>
+          <strong>On-Time Supply</strong>
+          <p>We focus on reliable production and delivery schedules.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">₹</div>
+          <strong>Good Pricing</strong>
+          <p>Factory-based rates for better business value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section industries" id="industries">
+    <div class="container">
+      <h2 class="section-title">Industries We Serve</h2>
+      <p class="section-subtitle">
+        Our carton boxes are used by multiple industries for packaging, branding and transport support.
+      </p>
+
+      <div class="industries-grid">
+        <div class="industry">
+          <h3>E-commerce & Courier</h3>
+          <p>Secure shipping boxes for online orders, courier dispatch and return-safe packaging.</p>
+        </div>
+
+        <div class="industry">
+          <h3>Retail & Wholesale</h3>
+          <p>Product packaging for stores, stock supply, shop display and wholesale transport.</p>
+        </div>
+
+        <div class="industry">
+          <h3>Food & Bakery</h3>
+          <p>Useful packaging for bakery items, sweets, snacks and takeaway businesses.</p>
+        </div>
+
+        <div class="industry">
+          <h3>Pharma & FMCG</h3>
+          <p>Neat and organized box packaging for fast-moving consumer goods and product safety.</p>
+        </div>
+
+        <div class="industry">
+          <h3>Industrial Supply</h3>
+          <p>Durable cartons for tools, hardware, machine parts and warehouse movement.</p>
+        </div>
+
+        <div class="industry">
+          <h3>Custom Brand Packaging</h3>
+          <p>Printed and designed boxes that help improve your product presentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get Quote For Your Box Requirement</h2>
+      <p class="section-subtitle">
+        Send your size, quantity and box requirement. We will help you with the right packaging solution.
+      </p>
+
+      <div class="quote-wrap">
+        <div class="quote-card">
+          <h3>Business Enquiry</h3>
+          <p>
+            We handle single design development, repeat business orders and wholesale packaging supply. Share your requirement and get a quick response.
+          </p>
+
+          <div class="quote-list">
+            <div>✔ Custom carton size available</div>
+            <div>✔ Plain and printed box options</div>
+            <div>✔ Bulk order support</div>
+            <div>✔ Local and business dispatch supply</div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Request a Quote</h3>
+
+          <form onsubmit="sendToWhatsApp(event)">
+            <div class="form-grid">
+              <div class="field">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="field">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required>
+              </div>
+
+              <div class="field">
+                <label>Business Name</label>
+                <input type="text" id="business" placeholder="Enter business name">
+              </div>
+
+              <div class="field">
+                <label>Box Type</label>
+                <select id="boxType">
+                  <option>Corrugated Box</option>
+                  <option>Printed Box</option>
+                  <option>E-commerce Box</option>
+                  <option>Food Box</option>
+                  <option>Custom Box</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label>Requirement Details</label>
+                <textarea id="message" placeholder="Mention size, quantity, printing need, delivery location, etc."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Shree Carton Box Factory</h3>
+        <p>
+          Quality carton box manufacturer for corrugated, custom and bulk packaging requirements. Replace phone, address and WhatsApp number with your real business details.
+        </p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="tel:+919999999999" class="footer-btn">Call</a>
+        <a href="https://wa.me/919999999999" target="_blank" class="footer-btn">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="float-btn" href="https://wa.me/919999999999" target="_blank">WA</a>
+
+  <script>
+    function sendToWhatsApp(e){
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const business = document.getElementById("business").value.trim();
+      const boxType = document.getElementById("boxType").value;
+      const message = document.getElementById("message").value.trim();
+
+      const text =
+`Hello Shree Carton Box Factory,
+Name: ${name}
+Phone: ${phone}
+Business: ${business}
+Box Type: ${boxType}
+Requirement: ${message}`;
+
+      const whatsappNumber = "919999999999"; // apna real WhatsApp number daalna
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
+
